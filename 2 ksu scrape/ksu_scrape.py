@@ -1,5 +1,6 @@
 '''
 TO use this code, you will first need to install the three packages being imported below using pip or a manual install method.
+To use this code, you will first need to install the three packages being imported below using pip or a manual install method.
 '''
 from bs4 import BeautifulSoup
 import requests
@@ -7,7 +8,7 @@ import csv
 from datetime import datetime
 
 
-source = requests.get('https://news.kennesaw.edu/news-releases/?&categories=news%20releases&year=2019').text
+source = requests.get('https://news.kennesaw.edu/news-releases/?&categories=news%20releases&year=2020').text
 
 soup = BeautifulSoup(source, 'lxml')
 
